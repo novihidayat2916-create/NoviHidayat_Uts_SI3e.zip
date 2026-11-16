@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="topbar">
+            <h1>Royal Dashboard</h1>
+            <form>
+                <input type="text" id="searchInput" placeholder="Cari Kelas, Dokumen, Aktifitas dll...">
+            </form>
+        </header>
+
+        <div class="layout">
+            <nav class="sidebar">
+                <a href="#" class="nav-link active" data-menu="home">Home</a>
+                <a href="#" class="nav-link" data-menu="mahasiswa">Mahasiswa</a>
+                <a href="#" class="nav-link" data-menu="kelas">Kelas</a>
+                <a href="#" class="nav-link" data-menu="aktivitas">Aktifitas</a>
+                <a href="#" class="nav-link" data-menu="statistik">Statistik</a>
+                <a href="#" class="nav-link" data-menu="dokumen">Dokumen</a>
+                <a href="#" class="nav-link" data-menu="settings">Settings</a>
+                <a href="#" class="nav-link sign-out" data-menu="signout">Sign Out</a>
+            </nav>
+
+            <main class="main-content">
+                <section class="welcome-card">
+                    <div>
+                        <h1 id="welcomeTitle">Selamat Datang, Nama Mahasiswa</h1>
+                        <h2 id="welcomeClass">Kelas SI-3X</h2>
+                        <p>Kamu memiliki Statistik, 4 Progres Kelas, 4 Aktifitas Selanjutnya dan 3 Lampiran Dokumen yang ada pada aplikasi ini.</p>
+                    </div>
+                    <div class="avatar">
+                        <img src="pashfoto.jpeg" alt="Foto Novi Hidayat">
+                    </div>
+                </section>
+
+                <div class="content-grid">
+                    <aside class="panel statistics" id="statisticsPanel">
+                        
+                        <img src="chart.svg" alt="Chart Statistik Mahasiswa">
+                    </aside>
+
+                    <section class="panel progress-panel" id="progressPanel">
+                        <h3>Progres Kelas</h3>
+                        <div class="info-card">
+                            <b>Matakuliah A</b>
+                            <span>30 Pendaftar</span>
+                        </div>
+                        <div class="info-card">
+                            <b>Matakuliah B</b>
+                            <span>40 Pendaftar</span>
+                        </div>
+                        <div class="info-card">
+                            <b>Matakuliah C</b>
+                            <span>48 Pendaftar</span>
+                        </div>
+                        <div class="info-card">
+                            <b>Matakuliah D</b>
+                            <span>40 Pendaftar</span>
+                        </div>
+                    </section>
+
+                    <section class="panel activities-panel" id="activitiesPanel">
+                        <h3>Aktifitas Selanjutnya</h3>
+                        <div class="activity-card">
+                            <b>Perkuliahan Daring 1</b>
+                            <span>Senin, 15 Januari 2025</span>
+                        </div>
+                        <div class="activity-card">
+                            <b>Perkuliahan Daring 1</b>
+                            <span>Selasa, 15 Februari 2025</span>
+                        </div>
+                        <div class="activity-card">
+                            <b>Perkuliahan Daring 1</b>
+                            <span>Rabu, 15 Maret 2025</span>
+                        </div>
+                        <div class="activity-card">
+                            <b>Perkuliahan Daring 1</b>
+                            <span>Kamis, 15 April 2025</span>
+                        </div>
+                    </section>
+
+                    <footer class="panel attachments-panel" id="attachmentsPanel">
+                        <h3>Lampiran Dokumen</h3>
+                        <div class="document-row">
+                            <span>
+                                <b>Lampiran Dokumen 1</b> - Matakuliah A | Tugas Bersama Perkuliahan Daring
+                            </span>
+                                <a href="#">Lihat Dokumen</a>
+                        </div>
+                        <div class="document-row">
+                            <span>
+                                <b>Lampiran Dokumen 2</b> - Matakuliah B | Tugas Bersama Perkuliahan Daring
+                            </span>
+                            <a href="#">Lihat Dokumen</a>
+                        </div>
+                        <div class="document-row">
+                            <span>
+                                <b>Lampiran Dokumen 3</b> - Matakuliah C | Tugas Bersama Perkuliahan Daring
+                            </span>
+                            <a href="#">Lihat Dokumen</a>
+                        </div>
+                    </footer>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
